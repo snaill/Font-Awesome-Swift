@@ -24,11 +24,17 @@ public class FontLoader {
         
         if identifier?.hasPrefix("org.cocoapods") == true {
             
-            fontURL = bundle.url(forResource: FAStruct.FontName, withExtension: "ttf", subdirectory: "Font-Awesome-Swift.bundle")!
+            fontURL = bundle.url(forResource: FAStruct.FontName, withExtension: "ttf", subdirectory: "Font-Awesome-Swift.bundle")
         } else {
             
-            fontURL = bundle.url(forResource: FAStruct.FontName, withExtension: "ttf")!
+            fontURL = bundle.url(forResource: FAStruct.FontName, withExtension: "ttf")
         }
+        
+        if fontURL == nil {
+            NSLog("\(FAStruct.FontName).ttf not find.")
+            return
+        }
+        
         let data = try! Data(contentsOf: fontURL!)
         
         let provider = CGDataProvider(data: data as CFData)

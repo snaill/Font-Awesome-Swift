@@ -8,12 +8,24 @@
 
 import SwiftUI
 
-struct FAText: View {
+public struct FAText: View {
     
     var fa: FAType
-    var size: CGFloat = 18
+    var size: CGFloat
     
-    var body: some View {
+    public init(_ fa: FAType) {
+    
+        self.fa = fa
+        self.size = NSFont.systemFontSize
+    }
+    
+    public init(_ fa: FAType, size: CGFloat) {
+    
+        self.fa = fa
+        self.size = size
+    }
+    
+    public var body: some View {
         Text(fa.text!).font(getfont(size: size))
     }
     
@@ -26,6 +38,6 @@ struct FAText: View {
 
 struct FAText_Previews: PreviewProvider {
     static var previews: some View {
-        FAText(fa: FAType.FAAdjust, size: 18)
+        FAText(FAType.FAAdjust, size: 18)
     }
 }

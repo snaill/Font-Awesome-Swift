@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Font_Awesome_Swift
 
 //extension Text {
 //
@@ -22,7 +23,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            FAText(fa: FAType.FAAdjust).foregroundColor(Color.red)
+            Text("this is a example.")
+        FAText(FAType.FAAdjust).foregroundColor(Color.green)
+
+            FAText(FAType.FAAdjust, size: 18).foregroundColor(Color.red)
             
 //            Text(fa: FAType.FAAdjust)
         }
