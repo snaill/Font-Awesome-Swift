@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11E3F42723C0DFF10030156B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11E3F42623C0DFF10030156B /* FontAwesome.ttf */; };
+		11E3F42923C0E1870030156B /* Font-Awesome-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 11E3F42823C0E1870030156B /* Font-Awesome-Swift */; };
 		11EC1E2123C085CB00D838E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC1E2023C085CB00D838E7 /* AppDelegate.swift */; };
 		11EC1E2323C085CB00D838E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC1E2223C085CB00D838E7 /* ContentView.swift */; };
 		11EC1E2523C085CB00D838E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EC1E2423C085CB00D838E7 /* Assets.xcassets */; };
 		11EC1E2823C085CB00D838E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EC1E2723C085CB00D838E7 /* Preview Assets.xcassets */; };
 		11EC1E2B23C085CB00D838E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EC1E2923C085CB00D838E7 /* Main.storyboard */; };
-		11EC1E4D23C0C9DD00D838E7 /* Font-Awesome-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 11EC1E4C23C0C9DD00D838E7 /* Font-Awesome-Swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		11E3F42423C0DA010030156B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		11E3F42623C0DFF10030156B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = Example_OSX/FontAwesome.ttf; sourceTree = "<group>"; };
 		11EC1E1D23C085CB00D838E7 /* Example_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EC1E2023C085CB00D838E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EC1E2223C085CB00D838E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EC1E4D23C0C9DD00D838E7 /* Font-Awesome-Swift in Frameworks */,
+				11E3F42923C0E1870030156B /* Font-Awesome-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 		11EC1E1423C085CB00D838E7 = {
 			isa = PBXGroup;
 			children = (
+				11E3F42623C0DFF10030156B /* FontAwesome.ttf */,
 				11EC1E4423C09FF200D838E7 /* Package.swift */,
 				11EC1E4A23C0C8F800D838E7 /* Font-Awesome-Swift */,
 				11EC1E1F23C085CB00D838E7 /* Example_OSX */,
@@ -98,6 +114,7 @@
 				11EC1E1923C085CB00D838E7 /* Sources */,
 				11EC1E1A23C085CB00D838E7 /* Frameworks */,
 				11EC1E1B23C085CB00D838E7 /* Resources */,
+				11E3F42423C0DA010030156B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,7 +122,7 @@
 			);
 			name = Example_OSX;
 			packageProductDependencies = (
-				11EC1E4C23C0C9DD00D838E7 /* Font-Awesome-Swift */,
+				11E3F42823C0E1870030156B /* Font-Awesome-Swift */,
 			);
 			productName = Example_OSX;
 			productReference = 11EC1E1D23C085CB00D838E7 /* Example_OSX.app */;
@@ -152,6 +169,7 @@
 				11EC1E2B23C085CB00D838E7 /* Main.storyboard in Resources */,
 				11EC1E2823C085CB00D838E7 /* Preview Assets.xcassets in Resources */,
 				11EC1E2523C085CB00D838E7 /* Assets.xcassets in Resources */,
+				11E3F42723C0DFF10030156B /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +378,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		11EC1E4C23C0C9DD00D838E7 /* Font-Awesome-Swift */ = {
+		11E3F42823C0E1870030156B /* Font-Awesome-Swift */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "Font-Awesome-Swift";
 		};

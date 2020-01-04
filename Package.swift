@@ -10,9 +10,9 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "Font-Awesome-Swift",
-            targets: ["Font-Awesome-Swift"]),
+        // Swift Package 5.1 not support resouce, use static load resource from main bundle
+//        .library(name: "Font-Awesome-Swift", type: .dynamic, targets: ["Font-Awesome-Swift"]),
+        .library(name: "Font-Awesome-Swift", type: .static, targets: ["Font-Awesome-Swift"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
