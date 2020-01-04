@@ -27,4 +27,7 @@ xcuserdata
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
-.build/build.db
+.build/*
+Example_OSX/Example_OSX.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Example_OSX/Example_OSX.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Example/FA Swift.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist

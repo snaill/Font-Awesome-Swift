@@ -16,6 +16,7 @@
 		11EC1E3923C0873C00D838E7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11EC1E3723C0873C00D838E7 /* FontAwesome.ttf */; };
 		11EC1E3B23C0895500D838E7 /* FAIconOSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC1E3A23C0895500D838E7 /* FAIconOSX.swift */; };
 		11EC1E4123C094CB00D838E7 /* FAText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC1E4023C094CB00D838E7 /* FAText.swift */; };
+		11EC1E4523C09FF200D838E7 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EC1E4423C09FF200D838E7 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		11EC1E3723C0873C00D838E7 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../../../Sources/Font-Awesome-Swift/FontAwesome.ttf"; sourceTree = "<group>"; };
 		11EC1E3A23C0895500D838E7 /* FAIconOSX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FAIconOSX.swift; path = "../../../Sources/Font-Awesome-Swift/FAIconOSX.swift"; sourceTree = "<group>"; };
 		11EC1E4023C094CB00D838E7 /* FAText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FAText.swift; path = "../../../Sources/Font-Awesome-Swift/FAText.swift"; sourceTree = "<group>"; };
+		11EC1E4423C09FF200D838E7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		11EC1E1423C085CB00D838E7 = {
 			isa = PBXGroup;
 			children = (
+				11EC1E4423C09FF200D838E7 /* Package.swift */,
 				11EC1E1F23C085CB00D838E7 /* Example_OSX */,
 				11EC1E1E23C085CB00D838E7 /* Products */,
 			);
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EC1E4523C09FF200D838E7 /* Package.swift in Sources */,
 				11EC1E3B23C0895500D838E7 /* FAIconOSX.swift in Sources */,
 				11EC1E3823C0873C00D838E7 /* FAIcon.swift in Sources */,
 				11EC1E2323C085CB00D838E7 /* ContentView.swift in Sources */,
