@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,8 +11,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         // Swift Package 5.1 not support resouce, use static load resource from main bundle
-//        .library(name: "Font-Awesome-Swift", type: .dynamic, targets: ["Font-Awesome-Swift"]),
-        .library(name: "Font-Awesome-Swift", type: .static, targets: ["Font-Awesome-Swift"]),
+        .library(name: "Font-Awesome-Swift", type: .dynamic, targets: ["Font-Awesome-Swift"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +22,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Font-Awesome-Swift",
-            dependencies: [])
+            dependencies: [],
+            resources: [
+                .process("FontAwesome.ttf")
+            ])
     ]
 )
